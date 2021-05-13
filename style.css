@@ -75,10 +75,14 @@ h1 { color: black; font-family: 'Raleway',sans-serif; font-size: 62px; font-weig
 h2 { color: black; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center; }
 
 
-p { color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
+p { color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 16px; }
 
 
 a { color: black; text-decoration: underline; }
 
 
 a:hover { color: black; text-decoration: underline; }
+
+li { type: tick;
+    color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 16px;
+    }
