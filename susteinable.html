@@ -8,6 +8,11 @@
           type = "image/x-icon">
     <script src="https://kit.fontawesome.com/9af35d77a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        div.calculator{
+            column-count: 2;
+        }
+    </style>
 </head>
 <body>
 <nav class="icon-bar">
@@ -19,6 +24,7 @@
 <main>
     <h1>How green are you?</h1>
     <h2>Calculte your carbon footprint!</h2>
+    <div class="calculator">
     <form>
         <p>Do you use a car? (yes/no)</p>
         <input type="text" id="car">
@@ -37,9 +43,40 @@
         <input type="text" id="recycle">
         <br>
         <input type="submit" onclick="calculate()">
+        <p> Your carbon footprint value is given in kilograms / day
+        <ul type="none">
+        <li><span style="color:darkseagreen">ECO</span> - 0 - 10 kg / day</li>
+        <li><span style="color: #f0b733">MODERATE POLLUTER</span> - 10 - 20 kg / day</li>
+        <li><span style="color: #f00300">HIGH POLLUTER</span> - 20 - 50 kg / day</li>
+        </ul></p>
 
 
     </form>
+    </div>
+
+    <br>
+    <h2>OPT FOR <span style="color:darkseagreen">GREEN ENERGY!</span></h2>
+    <h4>Solar power!</h4>
+    <p>Use solar energy to power your home and reduce your dependence on the grid.
+        Purchase solar at the lowest price of any national provider with Tesla's
+        price match guarantee and take control of your monthly electricity bill.</p>
+    <h4>Sleek and Durable</h4>
+    <p style="margin: 0 0 0px"> Our solar panels are low-profile and durable — quietly converting sunlight
+        to energy for decades to come. Integrated hardware and simple design achieve
+        this by securing the panels close to your roof and to each other for a minimal
+        aesthetic</p>
+    <img style="margin-left:25%; width: 50%" src="media/img5.jpg"></a>
+    <h4>Clean Aesthetic</h4>
+    <p>
+        All-black panels and proprietary hardware keep the array close to your roof — no bulky racks, no large gaps.
+    </p>
+    <img style="margin-left:25%; width: 50%" src="media/img6.jpg"></a>
+    <h4>Maximum Durability</h4>
+    <p>
+        Solar panels are designed with durability of both the array and your roof in mind — simple installation and proprietary hardware mean minimum impact to your roof.
+    </p>
+    <a href="https://www.tesla.com/solarpanels"><img style="margin-left:25%; width: 50%" src="media/img4.jpg"></a>
+    </div>
     <script>
         function calculate() {
             var s = 0;
@@ -59,7 +96,7 @@
             if (Number(check2) === Number(0)) {
                 s = s + 5;
             }
-            window.alert(s);
+            window.alert(s + " kilograms / day");
         }
 
     </script>
