@@ -77,9 +77,11 @@ h2 { color: black; font-family: 'Raleway',sans-serif; font-size: 30px; font-weig
 
 p { color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 16px; }
 
+label {color: black; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 15px;}
 
 a { color: black; text-decoration: underline; }
 
+h4 {color: black; font-family: 'Raleway',sans-serif; font-size: 15px; font-weight: 800; line-height: 36px;}
 
 a:hover { color: black; text-decoration: underline; }
 

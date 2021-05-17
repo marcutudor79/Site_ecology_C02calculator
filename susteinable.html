@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Low Cost EC</title>
+    <title>Green Energy</title>
     <link rel = "icon" href =
             "media/icon.jpg"
           type = "image/x-icon">
@@ -26,22 +26,21 @@
     <h2>Calculte your carbon footprint!</h2>
     <div class="calculator">
     <form>
-        <p>Do you use a car? (yes/no)</p>
-        <input type="text" id="car">
-        <p>If yes,for how many kilometers / day? (number 0-3120)</p>
-        <input type="number" id="cardays">
-        <p>How many times do you charge your phone/day? (number 0-10)</p>
-        <p>If you charge it once / 2days input 0.5. For once / 3days 0.33.</p>
-        <input type="number" id="phone">
-        <p>How many hours / day do you use artificial lighting? (number 0-24)</p>
-        <input type="number" id="lighting">
-        <p>Do you use natural gas? (yes/no)</p>
-        <input type="text" id="gas">
-        <p>How many times / year do you travel by plane? (0-720)</p>
-        <input type="number" id="plane">
-        <p>Do you recycle? (yes/no)</p>
+        <label for="car">Do you use a car? (yes/no)</label>
+        <input name="Do you use a car? (yes/no)" type="text" id="car"><br><br>
+        <label for="cardays">If yes,for how many kilometers / day? (number 0-3120)</label>
+        <input type="number" id="cardays"><br><br>
+        <label for="phone">How many times do you charge your phone/day? (number 0-10)
+        If you charge it once / 2days input 0.5. For once / 3days 0.33.</label>
+        <input type="number" id="phone"><br><br>
+        <label for="lighting">How many hours / day do you use artificial lighting? (number 0-24)</label>
+        <input type="number" id="lighting"><br><br>
+        <label for="gas">Do you use natural gas? (yes/no)</label>
+        <input type="text" id="gas"><br><br>
+        <label for="plane">How many times / year do you travel by plane? (0-720)</label>
+        <input type="number" id="plane"><br><br>
+        <label for="recycle">Do you recycle? (yes/no)</label>
         <input type="text" id="recycle">
-        <br>
         <input type="submit" onclick="calculate()">
         <p> Your carbon footprint value is given in kilograms / day
         <ul type="none">
@@ -89,12 +88,12 @@
             s = s + (document.getElementById("lighting").value * 0.25 / 24);
             var check2 = document.getElementById("gas").value.localeCompare("yes");
             if (Number(check2) === Number(0)) {
-                s = s + 5;
+                s = s + 2.252*3;
             }
             s = s + (document.getElementById("plane").value * 0.25 / 24)
             check2 = document.getElementById("recycle").value.localeCompare("yes");
             if (Number(check2) === Number(0)) {
-                s = s + 5;
+                s = s - (s*0.3);
             }
             window.alert(s + " kilograms / day");
         }
